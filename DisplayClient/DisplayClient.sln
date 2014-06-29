@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayClient", "DisplayClient\DisplayClient.csproj", "{F718430D-7D24-44C0-996C-6476B6F5C96D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayController", "DisplayController\DisplayController.csproj", "{8FCB08FA-0B7D-4C3C-A20A-7A428C6113E6}"
+EndProject
+Global
+	GlobalSection(MercurialSourceControlSolutionProperties) = preSolution
+		SolutionIsControlled = True
+		SolutionBindings = <Solution Location In Database>
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F718430D-7D24-44C0-996C-6476B6F5C96D}.Debug|x86.ActiveCfg = Debug|x86
+		{F718430D-7D24-44C0-996C-6476B6F5C96D}.Debug|x86.Build.0 = Debug|x86
+		{F718430D-7D24-44C0-996C-6476B6F5C96D}.Release|x86.ActiveCfg = Release|x86
+		{F718430D-7D24-44C0-996C-6476B6F5C96D}.Release|x86.Build.0 = Release|x86
+		{8FCB08FA-0B7D-4C3C-A20A-7A428C6113E6}.Debug|x86.ActiveCfg = Debug|x86
+		{8FCB08FA-0B7D-4C3C-A20A-7A428C6113E6}.Debug|x86.Build.0 = Debug|x86
+		{8FCB08FA-0B7D-4C3C-A20A-7A428C6113E6}.Release|x86.ActiveCfg = Release|x86
+		{8FCB08FA-0B7D-4C3C-A20A-7A428C6113E6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f0b23811-8155-4c16-b627-cd6399825fd7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8888/iTactixCoreService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CoreService.wsdl" MetadataType="Wsdl" ID="c84fd3d7-320b-4cf9-805f-dc61fa6890b7" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?wsdl" />
+    <MetadataFile FileName="iTactixCoreService.xsd" MetadataType="Schema" ID="dbddfd4e-5236-449a-b43c-013dbe4a71a9" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd0" />
+    <MetadataFile FileName="iTactixCoreService.disco" MetadataType="Disco" ID="8d70f0ef-054a-4bca-a375-15b8bb0c29b2" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?disco" />
+    <MetadataFile FileName="iTactixCoreService1.xsd" MetadataType="Schema" ID="8493ddf9-9676-4969-ad12-8478081776e6" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

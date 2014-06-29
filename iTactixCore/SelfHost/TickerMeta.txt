@@ -1,0 +1,1 @@
+text 0 690 1024 80 clRed Arial 48 10

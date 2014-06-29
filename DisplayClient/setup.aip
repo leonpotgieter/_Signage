@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="8.4" version="8.6" Modules="simple" RootPath="." Language="en" Id="{36C7D044-5F35-4BB7-9311-D2FE2C24928D}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="iTactix" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{27A4138B-D3CB-4E1A-923F-D0685263A0D7} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="CoreDisplayClient" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.0.6"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{8A24E830-30D2-46A9-847A-505E80CA60D0}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="MediaKit_Dir" Directory_Parent="APPDIR" DefaultDir="MediaKit"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Ticker_Dir" Directory_Parent="APPDIR" DefaultDir="Ticker"/>
+    <ROW Directory="icons_Dir" Directory_Parent="Ticker_Dir" DefaultDir="icons"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="ChilkatDotNet4.dll" ComponentId="{64F2CB4C-8269-472D-8759-EB921A473143}" Directory_="APPDIR" Attributes="0" KeyPath="ChilkatDotNet4.dll"/>
+    <ROW Component="DisplayClient.exe" ComponentId="{B17AF31C-8649-4055-9032-B72B747A9069}" Directory_="APPDIR" Attributes="0" KeyPath="DisplayClient.exe"/>
+    <ROW Component="DisplayClient.exe.config" ComponentId="{0493D605-423B-4688-8CAA-16C03B14B375}" Directory_="APPDIR" Attributes="0" KeyPath="DisplayClient.exe.config" Type="0"/>
+    <ROW Component="DisplayClient.vshost.exe" ComponentId="{492FDF7E-0A0D-491D-A7E7-F2C45588A343}" Directory_="APPDIR" Attributes="0" KeyPath="DisplayClient.vshost.exe"/>
+    <ROW Component="DisplayController.exe" ComponentId="{2E0ABF19-BA02-462C-9290-729CEDE4945F}" Directory_="APPDIR" Attributes="0" KeyPath="DisplayController.exe"/>
+    <ROW Component="DisplayController.vshost.exe" ComponentId="{0D523CAD-63DB-4FC6-AAF5-6E7711F4C7D8}" Directory_="APPDIR" Attributes="0" KeyPath="DisplayController.vshost.exe"/>
+    <ROW Component="EVRPresenter32.dll" ComponentId="{671E7B36-CC1E-4AA6-873D-7FE22A07BE82}" Directory_="MediaKit_Dir" Attributes="0" KeyPath="EVRPresenter32.dll"/>
+    <ROW Component="EVRPresenter64.dll" ComponentId="{D9B593DB-8A1B-4FFB-BFDD-F71FB75231ED}" Directory_="MediaKit_Dir" Attributes="256" KeyPath="EVRPresenter64.dll"/>
+    <ROW Component="Gurock.SmartInspect.dll" ComponentId="{DBBECD74-6B92-41CF-A5A0-73EC9EDD6648}" Directory_="APPDIR" Attributes="0" KeyPath="Gurock.SmartInspect.dll"/>
+    <ROW Component="HardwareID.dll" ComponentId="{1D0CD6F9-F66C-4903-9645-1ED8F63B4CD3}" Directory_="APPDIR" Attributes="0" KeyPath="HardwareID.dll"/>
+    <ROW Component="ShaderEffectLibrary.dll" ComponentId="{D409154B-1982-48A5-8F65-D91CACD2256F}" Directory_="MediaKit_Dir" Attributes="0" KeyPath="ShaderEffectLibrary.dll"/>
+    <ROW Component="ShaderEffectLibrary.dll_1" ComponentId="{AD91C5EF-D3D0-433F-8E8C-BDCA242E3E3A}" Directory_="APPDIR" Attributes="0" KeyPath="ShaderEffectLibrary.dll_1"/>
+    <ROW Component="System.Windows.Interactivity.dll" ComponentId="{1A83932C-DF53-46AC-9E09-1177523B7340}" Directory_="MediaKit_Dir" Attributes="0" KeyPath="System.Windows.Interactivity.dll"/>
+    <ROW Component="System.Windows.Interactivity.dll_1" ComponentId="{3C796CB3-9B14-407A-A127-EDACB84E137C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Interactivity.dll_1"/>
+    <ROW Component="TVideoGrabber_7.6.214.8.dll" ComponentId="{A16D40EF-0652-4ACF-AFCE-7F6019978AA4}" Directory_="APPDIR" Attributes="0" KeyPath="TVideoGrabber_7.6.214.8.dll"/>
+    <ROW Component="Ticker.exe" ComponentId="{502C7A46-0429-4589-A6BD-9D9A737EC3BC}" Directory_="Ticker_Dir" Attributes="0" KeyPath="Ticker.exe"/>
+    <ROW Component="VideoGrabberNET.dll" ComponentId="{2DF569CA-05B2-4F6E-86D6-14CD3D2D0441}" Directory_="APPDIR" Attributes="0" KeyPath="VideoGrabberNET.dll"/>
+    <ROW Component="WPFMediaKit.dll" ComponentId="{0329AC45-C0D1-4C13-BA33-B6471D01FC7D}" Directory_="MediaKit_Dir" Attributes="0" KeyPath="WPFMediaKit.dll"/>
+    <ROW Component="WPFMediaKit.dll_1" ComponentId="{0F5D128C-CE89-4C35-9CEB-B3A17F7D8315}" Directory_="APPDIR" Attributes="0" KeyPath="WPFMediaKit.dll_1"/>
+    <ROW Component="cold.ico" ComponentId="{0DFFBCE7-8848-48BF-B397-B5E7299679FC}" Directory_="icons_Dir" Attributes="0" KeyPath="cold.ico" Type="0"/>
+    <ROW Component="f_in_box.dll" ComponentId="{0846DDA8-5325-42E4-8176-6DD15679F8D3}" Directory_="APPDIR" Attributes="0" KeyPath="f_in_box.dll"/>
+    <ROW Component="f_in_box__lib.dll" ComponentId="{02035C7A-F5A1-472A-B061-F57A50296399}" Directory_="APPDIR" Attributes="0" KeyPath="f_in_box__lib.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="ChilkatDotNet4.dll DisplayClient.exe DisplayClient.exe.config DisplayClient.vshost.exe DisplayController.exe DisplayController.vshost.exe EVRPresenter32.dll EVRPresenter64.dll Gurock.SmartInspect.dll HardwareID.dll ShaderEffectLibrary.dll ShaderEffectLibrary.dll_1 System.Windows.Interactivity.dll System.Windows.Interactivity.dll_1 TVideoGrabber_7.6.214.8.dll Ticker.exe VideoGrabberNET.dll WPFMediaKit.dll WPFMediaKit.dll_1 cold.ico f_in_box.dll f_in_box__lib.dll"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ChilkatDotNet4.dll" Component_="ChilkatDotNet4.dll" FileName="Chilka~1.dll|ChilkatDotNet4.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\ChilkatDotNet4.dll" SelfReg="false" NextFile="DisplayClient.exe"/>
+    <ROW File="DisplayClient.exe" Component_="DisplayClient.exe" FileName="Displa~1.exe|DisplayClient.exe" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayClient.exe" SelfReg="false" NextFile="DisplayClient.exe.config"/>
+    <ROW File="DisplayClient.exe.config" Component_="DisplayClient.exe.config" FileName="Displa~1.con|DisplayClient.exe.config" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayClient.exe.config" SelfReg="false" NextFile="DisplayClient.pdb"/>
+    <ROW File="DisplayClient.pdb" Component_="DisplayClient.exe" FileName="Displa~1.pdb|DisplayClient.pdb" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayClient.pdb" SelfReg="false" NextFile="DisplayClient.vshost.exe"/>
+    <ROW File="DisplayClient.vshost.exe" Component_="DisplayClient.vshost.exe" FileName="Displa~2.exe|DisplayClient.vshost.exe" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayClient.vshost.exe" SelfReg="false" NextFile="DisplayClient.vshost.exe.config"/>
+    <ROW File="DisplayClient.vshost.exe.config" Component_="DisplayClient.exe.config" FileName="Displa~2.con|DisplayClient.vshost.exe.config" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayClient.vshost.exe.config" SelfReg="false" NextFile="DisplayClient.vshost.exe.manifest"/>
+    <ROW File="DisplayClient.vshost.exe.manifest" Component_="DisplayClient.exe.config" FileName="Displa~1.man|DisplayClient.vshost.exe.manifest" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayClient.vshost.exe.manifest" SelfReg="false" NextFile="DisplayController.exe"/>
+    <ROW File="DisplayController.exe" Component_="DisplayController.exe" FileName="Displa~3.exe|DisplayController.exe" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayController.exe" SelfReg="false" NextFile="DisplayController.exe.config"/>
+    <ROW File="DisplayController.exe.config" Component_="DisplayClient.exe.config" FileName="Displa~3.con|DisplayController.exe.config" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayController.exe.config" SelfReg="false" NextFile="DisplayController.pdb"/>
+    <ROW File="DisplayController.pdb" Component_="DisplayController.exe" FileName="Displa~2.pdb|DisplayController.pdb" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayController.pdb" SelfReg="false" NextFile="DisplayController.vshost.exe"/>
+    <ROW File="DisplayController.vshost.exe" Component_="DisplayController.vshost.exe" FileName="Displa~4.exe|DisplayController.vshost.exe" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayController.vshost.exe" SelfReg="false" NextFile="DisplayController.vshost.exe.config"/>
+    <ROW File="DisplayController.vshost.exe.config" Component_="DisplayClient.exe.config" FileName="Displa~4.con|DisplayController.vshost.exe.config" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayController.vshost.exe.config" SelfReg="false" NextFile="DisplayController.vshost.exe.manifest"/>
+    <ROW File="DisplayController.vshost.exe.manifest" Component_="DisplayClient.exe.config" FileName="Displa~2.man|DisplayController.vshost.exe.manifest" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\DisplayController.vshost.exe.manifest" SelfReg="false" NextFile="f_in_box.dll"/>
+    <ROW File="EVRPresenter32.dll" Component_="EVRPresenter32.dll" FileName="EVRPre~1.dll|EVRPresenter32.dll" Attributes="0" SourcePath="DisplayClient\bin\Debug\MediaKit\EVRPresenter32.dll" SelfReg="false" NextFile="EVRPresenter64.dll"/>
+    <ROW File="EVRPresenter64.dll" Component_="EVRPresenter64.dll" FileName="EVRPre~2.dll|EVRPresenter64.dll" Attributes="0" SourcePath="DisplayClient\bin\Debug\MediaKit\EVRPresenter64.dll" SelfReg="false" NextFile="ShaderEffectLibrary.dll"/>
+    <ROW File="Gurock.SmartInspect.dll" Component_="Gurock.SmartInspect.dll" FileName="Gurock~1.dll|Gurock.SmartInspect.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Gurock.SmartInspect.dll" SelfReg="false" NextFile="Gurock.SmartInspect.xml"/>
+    <ROW File="Gurock.SmartInspect.xml" Component_="DisplayClient.exe.config" FileName="Gurock~1.xml|Gurock.SmartInspect.xml" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Gurock.SmartInspect.xml" SelfReg="false" NextFile="HardwareID.dll"/>
+    <ROW File="HardwareID.dll" Component_="HardwareID.dll" FileName="Hardwa~1.dll|HardwareID.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\HardwareID.dll" SelfReg="false" NextFile="screendump.jpg"/>
+    <ROW File="ShaderEffectLibrary.dll" Component_="ShaderEffectLibrary.dll" FileName="Shader~1.dll|ShaderEffectLibrary.dll" Attributes="0" SourcePath="DisplayClient\bin\Debug\MediaKit\ShaderEffectLibrary.dll" SelfReg="false" NextFile="System.Windows.Interactivity.dll"/>
+    <ROW File="ShaderEffectLibrary.dll_1" Component_="ShaderEffectLibrary.dll_1" FileName="Shader~1.dll|ShaderEffectLibrary.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\ShaderEffectLibrary.dll" SelfReg="false" NextFile="System.Windows.Interactivity.dll_1"/>
+    <ROW File="System.Windows.Interactivity.dll" Component_="System.Windows.Interactivity.dll" FileName="System~1.dll|System.Windows.Interactivity.dll" Attributes="0" SourcePath="DisplayClient\bin\Debug\MediaKit\System.Windows.Interactivity.dll" SelfReg="false" NextFile="WPFMediaKit.dll"/>
+    <ROW File="System.Windows.Interactivity.dll_1" Component_="System.Windows.Interactivity.dll_1" FileName="System~1.dll|System.Windows.Interactivity.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\System.Windows.Interactivity.dll" SelfReg="false" NextFile="TVideoGrabber_7.6.214.8.dll"/>
+    <ROW File="TVideoGrabber_7.6.214.8.dll" Component_="TVideoGrabber_7.6.214.8.dll" FileName="TVideo~1.dll|TVideoGrabber_7.6.214.8.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\TVideoGrabber_7.6.214.8.dll" SelfReg="false" NextFile="VideoGrabberNET.dll"/>
+    <ROW File="Ticker.exe" Component_="Ticker.exe" FileName="Ticker.exe" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\Ticker.exe" SelfReg="false" NextFile="EVRPresenter32.dll"/>
+    <ROW File="VideoGrabberNET.dll" Component_="VideoGrabberNET.dll" FileName="VideoG~1.dll|VideoGrabberNET.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\VideoGrabberNET.dll" SelfReg="false" NextFile="WPFMediaKit.dll_1"/>
+    <ROW File="WPFMediaKit.dll" Component_="WPFMediaKit.dll" FileName="WPFMed~1.dll|WPFMediaKit.dll" Attributes="0" SourcePath="DisplayClient\bin\Debug\MediaKit\WPFMediaKit.dll" SelfReg="false" NextFile="ChilkatDotNet4.dll"/>
+    <ROW File="WPFMediaKit.dll_1" Component_="WPFMediaKit.dll_1" FileName="WPFMed~1.dll|WPFMediaKit.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\WPFMediaKit.dll" SelfReg="false"/>
+    <ROW File="cold.ico" Component_="cold.ico" FileName="cold.ico" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\icons\cold.ico" SelfReg="false" NextFile="hot.ico"/>
+    <ROW File="f_in_box.dll" Component_="f_in_box.dll" FileName="f_in_box.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\f_in_box.dll" SelfReg="false" NextFile="f_in_box__lib.dll"/>
+    <ROW File="f_in_box__lib.dll" Component_="f_in_box__lib.dll" FileName="f_in_b~1.dll|f_in_box__lib.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\f_in_box__lib.dll" SelfReg="false" NextFile="Gurock.SmartInspect.dll"/>
+    <ROW File="hot.ico" Component_="cold.ico" FileName="hot.ico" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\icons\hot.ico" SelfReg="false" NextFile="weather_clouds_48.ico"/>
+    <ROW File="screendump.jpg" Component_="DisplayClient.exe.config" FileName="screen~1.jpg|screendump.jpg" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\screendump.jpg" SelfReg="false" NextFile="ShaderEffectLibrary.dll_1"/>
+    <ROW File="weather_clouds_48.ico" Component_="cold.ico" FileName="weathe~1.ico|weather_clouds_48.ico" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\icons\weather_clouds_48.ico" SelfReg="false" NextFile="weather_ray_48.ico"/>
+    <ROW File="weather_ray_48.ico" Component_="cold.ico" FileName="weathe~2.ico|weather_ray_48.ico" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\icons\weather_ray_48.ico" SelfReg="false" NextFile="weather_sunny_48.ico"/>
+    <ROW File="weather_sun_48.ico" Component_="cold.ico" FileName="weathe~4.ico|weather_sun_48.ico" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\icons\weather_sun_48.ico" SelfReg="false" NextFile="Ticker.exe"/>
+    <ROW File="weather_sunny_48.ico" Component_="cold.ico" FileName="weathe~3.ico|weather_sunny_48.ico" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\iTactix\CoreDisplayClient\Ticker\icons\weather_sunny_48.ico" SelfReg="false" NextFile="weather_sun_48.ico"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="301"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

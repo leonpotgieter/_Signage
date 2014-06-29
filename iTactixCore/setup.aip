@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="8.4" version="8.6" Modules="simple" RootPath="." Language="en" Id="{8FAD206A-791D-4E95-9CA1-B298A56C6B6A}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="iTactix" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{AA311ED1-00E1-4BC8-BE0A-8CAE6062E664} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="CoreService" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="1.3.9"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{345AEEF6-1D24-448B-B7FC-5BC4E5FBC43E}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DLL_Dir" Directory_Parent="APPDIR" DefaultDir="DLL"/>
+    <ROW Directory="Database_Dir" Directory_Parent="APPDIR" DefaultDir="Database"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="CoreDB.vdb4" ComponentId="{BC7778B3-3C6E-4624-BF9D-7CB89A7AA1A4}" Directory_="Database_Dir" Attributes="0" KeyPath="CoreDB.vdb4" Type="0"/>
+    <ROW Component="CoreHost.exe" ComponentId="{E9750BA1-0A8A-4E71-9C26-6878BBF9FE4C}" Directory_="APPDIR" Attributes="0" KeyPath="CoreHost.exe"/>
+    <ROW Component="CoreHost.exe.config" ComponentId="{548337E3-7A07-4D58-BB9D-D70B30877ED2}" Directory_="APPDIR" Attributes="0" KeyPath="CoreHost.exe.config" Type="0"/>
+    <ROW Component="CoreHost.vshost.exe" ComponentId="{8242E037-BDB3-4409-8062-1993221FA2FC}" Directory_="APPDIR" Attributes="0" KeyPath="CoreHost.vshost.exe"/>
+    <ROW Component="EntitySpaces.Core.dll" ComponentId="{6F51062B-66F1-48F5-8457-7FA3009203CD}" Directory_="APPDIR" Attributes="0" KeyPath="EntitySpaces.Core.dll"/>
+    <ROW Component="EntitySpaces.DynamicQuery.dll" ComponentId="{DE13E57C-F397-449A-AE64-3A4A39B6A856}" Directory_="APPDIR" Attributes="0" KeyPath="EntitySpaces.DynamicQuery.dll"/>
+    <ROW Component="EntitySpaces.Interfaces.dll" ComponentId="{AFD3BA55-C937-4A71-AD18-024E30196534}" Directory_="APPDIR" Attributes="0" KeyPath="EntitySpaces.Interfaces.dll"/>
+    <ROW Component="EntitySpaces.Loader.dll" ComponentId="{669DF291-5B99-4EA7-9AAD-C81CE8DED776}" Directory_="APPDIR" Attributes="0" KeyPath="EntitySpaces.Loader.dll"/>
+    <ROW Component="EntitySpaces.VistaDB4Provider.dll" ComponentId="{EC2FD701-0C94-4619-B61C-70349B07B586}" Directory_="APPDIR" Attributes="0" KeyPath="EntitySpaces.VistaDB4Provider.dll"/>
+    <ROW Component="Gurock.SmartInspect.dll" ComponentId="{596B919D-29A1-49A0-B8A9-0755FFA055C2}" Directory_="APPDIR" Attributes="0" KeyPath="Gurock.SmartInspect.dll"/>
+    <ROW Component="VistaDB.4.dll" ComponentId="{46D464FE-AE98-4292-9386-6875CE0DB81C}" Directory_="APPDIR" Attributes="0" KeyPath="VistaDB.4.dll"/>
+    <ROW Component="VistaDB.Entities.4.dll" ComponentId="{D5A2CC69-D046-463A-B57E-4B24CB2737A9}" Directory_="APPDIR" Attributes="0" KeyPath="VistaDB.Entities.4.dll"/>
+    <ROW Component="VistaDB.Web.4.dll" ComponentId="{17C0A51E-3C3C-4526-812D-9ED3F994889A}" Directory_="APPDIR" Attributes="0" KeyPath="VistaDB.Web.4.dll"/>
+    <ROW Component="wodFTPD.dll" ComponentId="{5914F320-6CDC-44BF-AC1B-9BBA57E0525F}" Directory_="DLL_Dir" Attributes="0" KeyPath="wodFTPD.dll"/>
+    <ROW Component="wodFTPD.dll_1" ComponentId="{17D16085-36A9-4CF8-9ABE-99A225AAFB41}" Directory_="APPDIR" Attributes="0" KeyPath="wodFTPD.dll_1"/>
+    <ROW Component="wodFTPD.ocx" ComponentId="{5A45868F-8504-4D40-8094-29FE66F300E6}" Directory_="DLL_Dir" Attributes="0" KeyPath="wodFTPD.ocx"/>
+    <ROW Component="wodFTPD.ocx_1" ComponentId="{837C59B0-B9A4-427C-8520-B81D563525A0}" Directory_="APPDIR" Attributes="0" KeyPath="wodFTPD.ocx_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CoreDB.vdb4 CoreHost.exe CoreHost.exe.config CoreHost.vshost.exe EntitySpaces.Core.dll EntitySpaces.DynamicQuery.dll EntitySpaces.Interfaces.dll EntitySpaces.Loader.dll EntitySpaces.VistaDB4Provider.dll Gurock.SmartInspect.dll VistaDB.4.dll VistaDB.Entities.4.dll VistaDB.Web.4.dll wodFTPD.dll wodFTPD.dll_1 wodFTPD.ocx wodFTPD.ocx_1"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CoreDB.vdb4" Component_="CoreDB.vdb4" FileName="CoreDB~1.vdb|CoreDB.vdb4" Attributes="0" SourcePath="SelfHost\bin\Release\Database\CoreDB.vdb4" SelfReg="false" NextFile="CoreDB.vdc4"/>
+    <ROW File="CoreDB.vdc4" Component_="CoreDB.vdb4" FileName="CoreDB~1.vdc|CoreDB.vdc4" Attributes="0" SourcePath="SelfHost\bin\Release\Database\CoreDB.vdc4" SelfReg="false" NextFile="wodFTPD.dll"/>
+    <ROW File="CoreHost.exe" Component_="CoreHost.exe" FileName="CoreHost.exe" Attributes="0" SourcePath="SelfHost\bin\Release\CoreHost.exe" SelfReg="false" NextFile="CoreHost.exe.config"/>
+    <ROW File="CoreHost.exe.config" Component_="CoreHost.exe.config" FileName="CoreHo~1.con|CoreHost.exe.config" Attributes="0" SourcePath="SelfHost\bin\Release\CoreHost.exe.config" SelfReg="false" NextFile="CoreHost.pdb"/>
+    <ROW File="CoreHost.pdb" Component_="CoreHost.exe" FileName="CoreHost.pdb" Attributes="0" SourcePath="SelfHost\bin\Release\CoreHost.pdb" SelfReg="false" NextFile="CoreHost.vshost.exe"/>
+    <ROW File="CoreHost.vshost.exe" Component_="CoreHost.vshost.exe" FileName="CoreHo~1.exe|CoreHost.vshost.exe" Attributes="0" SourcePath="SelfHost\bin\Release\CoreHost.vshost.exe" SelfReg="false" NextFile="CoreHost.vshost.exe.config"/>
+    <ROW File="CoreHost.vshost.exe.config" Component_="CoreHost.exe.config" FileName="CoreHo~2.con|CoreHost.vshost.exe.config" Attributes="0" SourcePath="SelfHost\bin\Release\CoreHost.vshost.exe.config" SelfReg="false" NextFile="CoreHost.vshost.exe.manifest"/>
+    <ROW File="CoreHost.vshost.exe.manifest" Component_="CoreHost.exe.config" FileName="CoreHo~1.man|CoreHost.vshost.exe.manifest" Attributes="0" SourcePath="SelfHost\bin\Release\CoreHost.vshost.exe.manifest" SelfReg="false" NextFile="EntitySpaces.Core.dll"/>
+    <ROW File="EntitySpaces.Core.dll" Component_="EntitySpaces.Core.dll" FileName="Entity~1.dll|EntitySpaces.Core.dll" Attributes="0" SourcePath="SelfHost\bin\Release\EntitySpaces.Core.dll" SelfReg="false" NextFile="EntitySpaces.DynamicQuery.dll"/>
+    <ROW File="EntitySpaces.DynamicQuery.dll" Component_="EntitySpaces.DynamicQuery.dll" FileName="Entity~2.dll|EntitySpaces.DynamicQuery.dll" Attributes="0" SourcePath="SelfHost\bin\Release\EntitySpaces.DynamicQuery.dll" SelfReg="false" NextFile="EntitySpaces.Interfaces.dll"/>
+    <ROW File="EntitySpaces.Interfaces.dll" Component_="EntitySpaces.Interfaces.dll" FileName="Entity~3.dll|EntitySpaces.Interfaces.dll" Attributes="0" SourcePath="SelfHost\bin\Release\EntitySpaces.Interfaces.dll" SelfReg="false" NextFile="EntitySpaces.Loader.dll"/>
+    <ROW File="EntitySpaces.Loader.dll" Component_="EntitySpaces.Loader.dll" FileName="Entity~4.dll|EntitySpaces.Loader.dll" Attributes="0" SourcePath="SelfHost\bin\Release\EntitySpaces.Loader.dll" SelfReg="false" NextFile="EntitySpaces.VistaDB4Provider.dll"/>
+    <ROW File="EntitySpaces.VistaDB4Provider.dll" Component_="EntitySpaces.VistaDB4Provider.dll" FileName="Entity~5.dll|EntitySpaces.VistaDB4Provider.dll" Attributes="0" SourcePath="SelfHost\bin\Release\EntitySpaces.VistaDB4Provider.dll" SelfReg="false" NextFile="TickerMeta.txt"/>
+    <ROW File="Gurock.SmartInspect.dll" Component_="Gurock.SmartInspect.dll" FileName="Gurock~1.dll|Gurock.SmartInspect.dll" Attributes="0" SourcePath="SelfHost\bin\Release\Gurock.SmartInspect.dll" SelfReg="false" NextFile="Gurock.SmartInspect.xml"/>
+    <ROW File="Gurock.SmartInspect.xml" Component_="CoreHost.exe.config" FileName="Gurock~1.xml|Gurock.SmartInspect.xml" Attributes="0" SourcePath="SelfHost\bin\Release\Gurock.SmartInspect.xml" SelfReg="false" NextFile="CoreDB.vdb4"/>
+    <ROW File="Ticker.txt" Component_="CoreHost.exe.config" FileName="Ticker.txt" Attributes="0" SourcePath="SelfHost\bin\Release\Ticker.txt" SelfReg="false" NextFile="Gurock.SmartInspect.dll"/>
+    <ROW File="TickerMeta.txt" Component_="CoreHost.exe.config" FileName="Ticker~1.txt|TickerMeta.txt" Attributes="0" SourcePath="SelfHost\bin\Release\TickerMeta.txt" SelfReg="false" NextFile="Ticker.txt"/>
+    <ROW File="VistaDB.4.dll" Component_="VistaDB.4.dll" FileName="VistaD~1.dll|VistaDB.4.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\VistaDB 4.2.18.1\Runtimes\VistaDB.4.dll" SelfReg="false" NextFile="VistaDB.Entities.4.dll"/>
+    <ROW File="VistaDB.Entities.4.dll" Component_="VistaDB.Entities.4.dll" FileName="VistaD~2.dll|VistaDB.Entities.4.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\VistaDB 4.2.18.1\Runtimes\VistaDB.Entities.4.dll" SelfReg="false" NextFile="VistaDB.Web.4.dll"/>
+    <ROW File="VistaDB.Web.4.dll" Component_="VistaDB.Web.4.dll" FileName="VistaD~3.dll|VistaDB.Web.4.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\VistaDB 4.2.18.1\Runtimes\VistaDB.Web.4.dll" SelfReg="false"/>
+    <ROW File="wodFTPD.dll" Component_="wodFTPD.dll" FileName="wodFTPD.dll" Attributes="0" SourcePath="SelfHost\bin\Release\DLL\wodFTPD.dll" SelfReg="false" NextFile="wodFTPD.ocx"/>
+    <ROW File="wodFTPD.dll_1" Component_="wodFTPD.dll_1" FileName="wodFTPD.dll" Attributes="0" SourcePath="SelfHost\bin\Release\DLL\wodFTPD.dll" SelfReg="true" NextFile="wodFTPD.ocx_1"/>
+    <ROW File="wodFTPD.ocx" Component_="wodFTPD.ocx" FileName="wodFTPD.ocx" Attributes="0" SourcePath="SelfHost\bin\Release\DLL\wodFTPD.ocx" SelfReg="false" NextFile="wodFTPD.dll_1"/>
+    <ROW File="wodFTPD.ocx_1" Component_="wodFTPD.ocx_1" FileName="wodFTPD.ocx" Attributes="0" SourcePath="SelfHost\bin\Release\DLL\wodFTPD.ocx" SelfReg="true" NextFile="VistaDB.4.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFileName="iTactixCoreSetup" Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_DOTNET40_SEARCH" Signature_="AI_DotNet40SearchSgn" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="301"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_DotNet40SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full" Name="Install" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="CoreHost.exe" Directory_="SHORTCUTDIR" Name="CoreHost.exe" Component_="CoreHost.exe" Target="[#CoreHost.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="CoreHost.exe_1" Directory_="DesktopFolder" Name="CoreHost.exe" Component_="CoreHost.exe" Target="[#CoreHost.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

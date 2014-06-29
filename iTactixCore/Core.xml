@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<esSettings Version="2011.1.0530.0">
+  <Driver>VistaDB4</Driver>
+  <ConnectionString>Data Source=C:\Development\My Dropbox\Source\VS2008\_2011\Core\SelfHost\Database\CoreDB.vdb4;Open Mode=NonexclusiveReadWrite;</ConnectionString>
+  <TemplatePath>C:\Program Files (x86)\EntitySpaces 2011\CodeGeneration\Templates\</TemplatePath>
+  <OutputPath>C:\Development\My Dropbox\Source\VS2008\_2011\Core\SelfHost</OutputPath>
+  <UIAssemblyPath>C:\Program Files (x86)\EntitySpaces 2011\CodeGeneration\Bin\UIAddIns\</UIAssemblyPath>
+  <CompilerAssemblyPath>C:\Program Files (x86)\EntitySpaces 2011\CodeGeneration\Bin\</CompilerAssemblyPath>
+  <LanguageMappingFile>C:\Program Files (x86)\EntitySpaces 2011\CodeGeneration\esLanguages.xml</LanguageMappingFile>
+  <UserMetadataFile>C:\ProgramData\EntitySpaces\ES2011\esUserData.xml</UserMetadataFile>
+  <AbstractPrefix>es</AbstractPrefix>
+  <EntitySuffix />
+  <CollectionSuffix>Collection</CollectionSuffix>
+  <QuerySuffix>Query</QuerySuffix>
+  <MetadataSuffix>Metadata</MetadataSuffix>
+  <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+  <PrefixWithSchema>false</PrefixWithSchema>
+  <ProcPrefix>proc_</ProcPrefix>
+  <ProcInsert>Insert</ProcInsert>
+  <ProcUpdate>Update</ProcUpdate>
+  <ProcDelete>Delete</ProcDelete>
+  <ProcLoadAll>LoadAll</ProcLoadAll>
+  <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+  <ProcSuffix />
+  <ProcVerbFirst>false</ProcVerbFirst>
+  <OnePrefix />
+  <OneSeparator>By</OneSeparator>
+  <OneSuffix />
+  <ManyPrefix />
+  <ManySeparator>By</ManySeparator>
+  <ManySuffix>Collection</ManySuffix>
+  <SelfOnly>false</SelfOnly>
+  <SwapNames>false</SwapNames>
+  <UseAssociativeName>false</UseAssociativeName>
+  <UseUpToPrefix>true</UseUpToPrefix>
+  <PreserveUnderscores>false</PreserveUnderscores>
+  <UseRawNames>false</UseRawNames>
+  <UseNullableTypesAlways>true</UseNullableTypesAlways>
+  <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+  <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+  <LicenseProxyEnable>false</LicenseProxyEnable>
+  <LicenseProxyUrl />
+  <LicenseProxyUserName />
+  <LicenseProxyPassword />
+  <LicenseProxyDomainName />
+  <DriverInfoCollection>
+    <esSettingsDriverInfo>
+      <Driver>SQL</Driver>
+      <ConnectionString>Provider=SQLOLEDB.1;Password=;User ID=sa;Persist Security Info=True;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+      <DateAdded>
+        <IsEnabled>false</IsEnabled>
+        <Type>Unassigned</Type>
+        <ClientType>Unassigned</ClientType>
+      </DateAdded>
+      <DateModified>
+        <IsEnabled>false</IsEnabled>
+        <Type>Unassigned</Type>
+        <ClientType>Unassigned</ClientType>
+      </DateModified>
+      <AddedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+      </AddedBy>
+      <ModifiedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+      </ModifiedBy>
+      <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+    </esSettingsDriverInfo>
+    <esSettingsDriverInfo>
+      <Driver>PostgreSQL</Driver>
+      <ConnectionString>Server=127.0.0.1;Port=5432;User Id=pgsql;Password=PGPAZZ!!;Database=rapid;</ConnectionString>
+      <DateAdded>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName>DateAdded</ColumnName>
+        <Type>ServerSide</Type>
+        <ClientType>Now</ClientType>
+        <ServerSideText />
+      </DateAdded>
+      <DateModified>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName>DateModified</ColumnName>
+        <Type>ServerSide</Type>
+        <ClientType>Now</ClientType>
+        <ServerSideText />
+      </DateModified>
+      <AddedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>true</UseEventHandler>
+        <ColumnName>AddedBy</ColumnName>
+        <ServerSideText />
+      </AddedBy>
+      <ModifiedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>true</UseEventHandler>
+        <ColumnName>ModifiedBy</ColumnName>
+        <ServerSideText />
+      </ModifiedBy>
+      <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+      <ConcurrencyColumn />
+    </esSettingsDriverInfo>
+    <esSettingsDriverInfo>
+      <Driver>VistaDB4</Driver>
+      <ConnectionString>Data Source=C:\Development\My Dropbox\Source\VS2008\_2011\Core\SelfHost\Database\CoreDB.vdb4;Open Mode=NonexclusiveReadWrite;</ConnectionString>
+      <DateAdded>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName>DateAdded</ColumnName>
+        <Type>ServerSide</Type>
+        <ClientType>Now</ClientType>
+        <ServerSideText />
+      </DateAdded>
+      <DateModified>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName>DateModified</ColumnName>
+        <Type>ServerSide</Type>
+        <ClientType>Now</ClientType>
+        <ServerSideText />
+      </DateModified>
+      <AddedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>true</UseEventHandler>
+        <ColumnName>AddedBy</ColumnName>
+        <ServerSideText />
+      </AddedBy>
+      <ModifiedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>true</UseEventHandler>
+        <ColumnName>ModifiedBy</ColumnName>
+        <ServerSideText />
+      </ModifiedBy>
+      <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+      <ConcurrencyColumn />
+    </esSettingsDriverInfo>
+  </DriverInfoCollection>
+</esSettings>
